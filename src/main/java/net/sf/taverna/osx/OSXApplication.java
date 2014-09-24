@@ -41,7 +41,7 @@ public class OSXApplication {
 			cl = Thread.currentThread().getContextClassLoader();
 		}
 		try {
-			Class appListener = cl.loadClass("net.sf.taverna.osx.OSXApplicationListener");
+			Class<?> appListener = cl.loadClass("net.sf.taverna.osx.OSXApplicationListener");
 			Method register = appListener.getMethod("register", OSXListener.class);
 			register.invoke(null, new Object[] { listener });
 			//System.out.println("Registered!");

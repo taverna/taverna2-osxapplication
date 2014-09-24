@@ -4,6 +4,7 @@ import com.apple.eawt.Application;
 import com.apple.eawt.ApplicationEvent;
 import com.apple.eawt.ApplicationListener;
 
+@SuppressWarnings({ "restriction", "deprecation" })
 public class OSXApplicationListener implements ApplicationListener {
 
 	/**
